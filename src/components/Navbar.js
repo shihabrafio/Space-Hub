@@ -1,7 +1,16 @@
-import React from "react";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import links from './links';
 
 const Navbar = () => {
-  <nav>Navbar</nav>;
+  <div>
+    <ul>
+      {links.map((link) => (
+        <li key={link.text}>
+          <NavLink to={link.path}>{link.text}</NavLink>
+        </li>
+      ))}
+    </ul>
+  </div>;
 };
-
 export default Navbar;
