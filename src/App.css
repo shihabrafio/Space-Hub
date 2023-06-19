@@ -8,4 +8,12 @@
 
 .listitems a {
   color: black;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.listitems a:active,
+.listitems a:hover,
+.listitems a:focus {
+  text-decoration: underline;
 }

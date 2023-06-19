@@ -7,9 +7,9 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" />
-        <Route path="categories" />
-        <Route path="myprofile" />
+        <Route className="navlink" path="/" />
+        <Route className="navlink" path="categories" />
+        <Route className="navlink" path="myprofile" />
       </Routes>
     </div>
   );
