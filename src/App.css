@@ -1,3 +1,21 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 52px;
+  border-bottom: 1px solid #ddd;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 32px;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
 .navbar {
   list-style: none;
   display: flex;
@@ -7,9 +25,14 @@
 }
 
 .listitems a {
-  color: black;
-  font-size: 25px;
+  color: #449dff;
+  font-size: 18px;
   text-decoration: none;
+}
+
+.listitems:nth-child(2) {
+  border-right: 2px solid #000;
+  padding-right: 20px;
 }
 
 .listitems a:active,
