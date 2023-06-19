@@ -21,7 +21,6 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-
 # 📖 Space Travelers' Hub <a name="about-project"></a>
 
 **Space Traverlers' Hub** is a corporation that offers services for commercial and scientific space flight has a web application called Space-Travelers-Hub. Users of the app will be able to reserve rockets and sign up for particular space missions.
@@ -54,6 +53,7 @@
 - [Experince a live demo]()
 
 ## 💻 Getting Started <a name="getting-started"></a>
+
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
@@ -110,11 +110,17 @@ You can deploy this project using, Netlify:
 
 ## 👤 Authors <a name="authors"></a>
 
-👤 **A.I.M. Shihab Uddin Khan** 
+👤 **A.I.M. Shihab Uddin Khan**
 
 - GitHub: [@shihabrafio](https://github.com/shihabrafio)
 - Twitter: [@shihab_uddin19](https://twitter.com/shihab_uddin19)
 - LinkedIn: [Shihab Uddin Khan](https://www.linkedin.com/in/shihab-uddin-khan-45620a16a/)
+
+👤 **Vangelis Fotiadis**
+
+- GitHub: [@vangelif](https://github.com/vangelif)
+- Twitter: [@vangfot](https://twitter.com/vangfot)
+- LinkedIn: [Vangelis Fotiadis](https://www.linkedin.com/in/vangfot/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
