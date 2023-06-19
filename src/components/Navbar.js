@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import links from './links';
 
-const Navbar = () => {
+const Navbar = () => (
   <div>
     <ul>
       {links.map((link) => (
@@ -11,6 +11,6 @@ const Navbar = () => {
         </li>
       ))}
     </ul>
-  </div>;
-};
+  </div>
+);
 export default Navbar;
