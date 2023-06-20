@@ -12,7 +12,6 @@ function App() {
         <Route className="navlink" path="/" element={<Rocket />} />
         <Route className="navlink" path="dragons" element={<Dragons />} />
 
-        <Route className="navlink" path="categories" />
         <Route className="navlink" path="myprofile" />
       </Routes>
     </div>

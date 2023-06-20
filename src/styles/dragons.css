@@ -1,7 +1,6 @@
-.dragon {
-  background-color: aqua;
-}
 
-.world {
-  background-color: bisque;
+.dragon-img img {
+  width: 300px;
+  height: 300px;
+
 }
