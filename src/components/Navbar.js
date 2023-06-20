@@ -7,7 +7,7 @@ const Navbar = () => (
     <header>
       <div className="logo">
         <img src="./assets/planet.png" alt="" />
-        <span> Space Travelers Hub</span>
+        <span><NavLink to="/">Space Travelers Hub</NavLink></span>
       </div>
       <ul className="navbar">
         {links.map((link) => (

@@ -26,6 +26,11 @@ header {
   margin-right: 1rem;
 }
 
+.logo > span > a {
+  text-decoration: none;
+  color: #000;
+}
+
 .listitems a {
   color: #449dff;
   font-size: 18px;
