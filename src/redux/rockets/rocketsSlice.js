@@ -29,7 +29,6 @@ const rocketSlice = createSlice({
         if (rocket.id === id) {
           return { ...rocket, reserved: true };
         }
-        console.log('helllo', rocket.id);
 
         return rocket;
       });
@@ -42,7 +41,6 @@ const rocketSlice = createSlice({
         state.status = 'loading';
       })
       .addCase(fetchRockets.fulfilled, (state, action) => {
-        console.log(action.payload);
         state.status = 'success';
         state.rockets = action.payload;
       })
