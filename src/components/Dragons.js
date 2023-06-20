@@ -1,11 +1,16 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchDragons } from '../redux/dragons/dragonsSlice';
-import '../styles/dragons.css';
+import {
+  fetchDragons,
+  reserveDragon,
+  cancelReservation,
+} from '../redux/dragons/dragonsSlice';
+import '../styles/general.css';
 
 const Dragons = () => {
   const { dragons, status, error } = useSelector((state) => state.dragons);
   const dispatch = useDispatch();
+
   useEffect(() => {
     if (status === 'idle') {
       dispatch(fetchDragons());
@@ -21,20 +26,35 @@ const Dragons = () => {
   }
 
   return (
-    <section>
+    <section className="container">
       {dragons.map((dragon) => (
-        <div key={dragon.id}>
-          <div className="dragon-img">
+        <div className="card" key={dragon.id}>
+          <div className="img">
             <img src={dragon.flickr_images} alt="123" />
           </div>
-          <div>
+          <div className="card-content">
             <h3>{dragon.name}</h3>
-            <p>
-              <span>Reserved</span>
+            <p className="desc">
+              {dragon.reserved && <span className="badge">Reserved</span>}
               {dragon.description}
             </p>
-            <button type="button">Reserve Dragon</button>
-            <button type="button">Cancel Reservation</button>
+            {!dragon.reserved ? (
+              <button
+                className="btn primary-btn"
+                type="button"
+                onClick={() => dispatch(reserveDragon(dragon.id))}
+              >
+                Reserve Dragon
+              </button>
+            ) : (
+              <button
+                className="btn secondary-outline-btn"
+                onClick={() => dispatch(cancelReservation(dragon.id))}
+                type="button"
+              >
+                Cancel Reservation
+              </button>
+            )}
           </div>
         </div>
       ))}
