@@ -1,7 +1,7 @@
-// import { useSelector } from 'react-redux';
+import '../styles/rockets.css';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getRockets } from '../redux/rockets/rocketsSlice';
+import { fetchRockets, reserveRocket } from '../redux/rockets/rocketsSlice';
 
 const Rocket = () => {
   const dispatch = useDispatch();
@@ -11,9 +11,14 @@ const Rocket = () => {
 
   useEffect(() => {
     if (status === 'idle') {
-      dispatch(getRockets());
+      dispatch(fetchRockets());
     }
   }, [status, dispatch]);
+
+  const reserveButton = (rocketId) => {
+    dispatch(reserveRocket(rocketId));
+  };
+
   if (status === 'loading') {
     return <div>Loading...</div>;
   }
@@ -30,10 +35,22 @@ const Rocket = () => {
           <div>
             <h3>{rocket.name}</h3>
             <p>
-              <span>Reserved</span>
+              <span className={rocket.reserved === true ? 'display' : 'hidden'}>
+                Reserved
+              </span>
               {rocket.description}
             </p>
-            <button type="button">Reserve Rocket</button>
+            {!rocket.reserved && (
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  reserveButton(rocket.id);
+                }}
+                type="button"
+              >
+                Reserve Rocket
+              </button>
+            )}
             <button type="button">Cancel Reservation</button>
           </div>
         </div>
