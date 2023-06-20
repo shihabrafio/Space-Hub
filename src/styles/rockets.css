@@ -1,0 +1,12 @@
+.display {
+  background-color: #26a69a;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-right: 6px;
+  padding: 0.1rem;
+}
+
+.hidden {
+  display: none;
+}
