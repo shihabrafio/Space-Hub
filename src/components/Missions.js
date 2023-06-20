@@ -18,21 +18,32 @@ const Mission = () => {
     return <div>{error}</div>;
   }
   return (
-    <section>
-      {missions.map((mission) => (
-        <div key={mission.mission_id}>
-          <div>
-            <h3>{mission.mission_name}</h3>
-            <p>
-              <span>Reserved</span>
-              {mission.description}
-            </p>
-            <button type="button">Reserve Dragon</button>
-            <button type="button">Cancel Reservation</button>
-          </div>
-        </div>
-      ))}
-    </section>
+    <table>
+      <thead>
+        <tr>
+          <th>Mission</th>
+          <th>Description</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          {missions.map((mission) => (
+            <div key={mission.id}>
+              <div>
+                <h3>{mission.name}</h3>
+                <p>
+                  <span>Reserved</span>
+                  {mission.description}
+                </p>
+                <button type="button">Not a Member</button>
+                <button type="button">Join Mission</button>
+              </div>
+            </div>
+          ))}
+        </tr>
+      </tbody>
+    </table>
   );
 };
 export default Mission;
