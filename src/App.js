@@ -11,6 +11,7 @@ function App() {
       <Routes>
         <Route className="navlink" path="/" element={<Rocket />} />
         <Route className="navlink" path="dragons" element={<Dragons />} />
+
         <Route className="navlink" path="myprofile" />
       </Routes>
     </div>
