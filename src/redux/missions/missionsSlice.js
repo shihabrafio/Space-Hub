@@ -35,7 +35,14 @@ const missionSlice = createSlice({
       })
       .addCase(fetchMissions.fulfilled, (state, action) => {
         state.status = 'success';
-        state.rockets = action.payload;
+        const missionsArr = [];
+        action.payload.map((mission) => missionsArr.push({
+          id: mission.mission_id,
+          name: mission.mission_name,
+          description: mission.description,
+          status: false
+        }));
+        state.missions = missionsArr;
       })
       .addCase(fetchMissions.rejected, (state, action) => {
         state.status = 'failed';
