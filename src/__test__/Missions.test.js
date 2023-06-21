@@ -11,7 +11,7 @@ const render = (component) => rtlRender(
   );
 
 describe('MyRocketss', () => {
-  it('render My Rockets Components', () => {
+  it('render Mission Components', () => {
     render(<Missions />);
     expect(Missions).toMatchSnapshot();
   });
