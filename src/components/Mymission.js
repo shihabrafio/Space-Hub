@@ -8,11 +8,17 @@ const MyMissions = () => {
   const filterMissions = missions.filter((mission) => mission.status === true);
   return (
     <table className="mymissions">
-      <thead>
-        <th className="missionsheader">My Missions</th>
+      <thead className="missionsheader">
+        <tr>
+          <th>My Missions</th>
+        </tr>
       </thead>
-      <tbody>
-        {filterMissions.map((mission) => <tr key={mission.id}>{mission.name}</tr>)}
+      <tbody className="missionstable">
+        {filterMissions.map((mission) => (
+          <tr key={mission.id}>
+            <td>{mission.name}</td>
+          </tr>
+        ))}
       </tbody>
     </table>
   );
