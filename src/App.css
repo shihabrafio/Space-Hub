@@ -48,3 +48,40 @@ header {
 .listitems a:focus {
   text-decoration: underline;
 }
+
+.profile-container {
+  width: 100%;
+  display: flex;
+  gap: 100px;
+  padding: 20px;
+}
+
+.dragons-wrapper {
+  width: 100%;
+}
+
+.rockets-wrapper {
+  width: 100%;
+}
+
+.rockets-wrapper > h2 {
+  margin-bottom: 15px;
+}
+
+.dragons-wrapper > h2 {
+  margin-bottom: 15px;
+}
+
+tr {
+  border: 2px solid lightgrey;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid lightgrey;
+}
+
+td {
+  padding-block: 20px;
+}
