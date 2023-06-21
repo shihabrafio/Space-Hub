@@ -89,3 +89,23 @@ td {
   cursor: pointer;
 }
 
+.mymissions {
+  margin: 4rem;
+}
+
+.missionsheader {
+  font-size: 30px;
+}
+
+.missionstable {
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-spacing: 0px;
+}
+.missionstable tr {
+  border: 1px solid #ccc;
+}
+.missionstable td {
+  padding: 10px;
+  background-color: #fff
+}
