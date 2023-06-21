@@ -26,22 +26,21 @@ const Rocket = () => {
     return <div>{error}</div>;
   }
   return (
-    <section>
+    <section className="container">
       {rockets.map((rocket) => (
-        <div key={rocket.id}>
-          <div>
+        <div className="card" key={rocket.id}>
+          <div className="img">
             <img src={rocket.flickr_images} alt="123" />
           </div>
-          <div>
+          <div className="card-content">
             <h3>{rocket.name}</h3>
-            <p>
-              <span className={rocket.reserved === true ? 'display' : 'hidden'}>
-                Reserved
-              </span>
+            <p className="desc">
+              {rocket.reserved && <span className="badge">Reserved</span>}
               {rocket.description}
             </p>
-            {!rocket.reserved && (
+            {!rocket.reserved ? (
               <button
+                className="btn primary-btn"
                 onClick={(e) => {
                   e.preventDefault();
                   reserveButton(rocket.id);
@@ -50,8 +49,11 @@ const Rocket = () => {
               >
                 Reserve Rocket
               </button>
+            ) : (
+              <button className="btn secondary-outline-btn" type="button">
+                Cancel Reservation
+              </button>
             )}
-            <button type="button">Cancel Reservation</button>
           </div>
         </div>
       ))}
