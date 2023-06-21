@@ -61,6 +61,7 @@ td {
 
 .notmember > .active {
   background-color: #1aa1b9;
+  font-size: 16px;
 }
 
 .joinbtn,
