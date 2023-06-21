@@ -1,0 +1,90 @@
+.mission_table_wrapper {
+  width: 90%;
+  margin-top: 1rem;
+  margin-left: 4rem;
+}
+
+.mission_table_wrapper,
+.mission_table_row,
+.mission_table_head,
+.mission_table_rows {
+  border: 1px solid #03142b;
+  border-collapse: collapse;
+}
+
+.mission_table_rows:nth-child(odd) {
+  background-color: rgb(223, 223, 223);
+}
+
+.mission_table_head {
+  padding: 0.8rem;
+}
+
+td {
+  border: 0.5px solid #03142b;
+  border-collapse: collapse;
+  padding-left: 1.5%;
+  width: 58%;
+}
+
+.nameData {
+  font-weight: bold;
+  font-size: 20px;
+  width: 15%;
+  padding: 0.5rem;
+}
+
+.notmember,
+.member {
+  width: 14%;
+  text-align: center;
+}
+
+.onemission_description {
+  padding: 0.5rem;
+}
+
+.notmember > span,
+.member > span {
+  border-radius: 5px;
+  padding-inline: 0.4rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.notmember > span {
+  display: block;
+  background-color: #6c757e;
+  width: 120px;
+  font-size: 0.8rem;
+}
+
+.notmember > .active {
+  background-color: #1aa1b9;
+  font-size: 16px;
+}
+
+.joinbtn,
+.leavebtn {
+  background: transparent;
+  padding: 0.8rem;
+  border-radius: 6px;
+}
+
+.joinmission {
+  border: 1px solid #4b5156;
+  padding: 2px 4px;
+  border-radius: 4px;
+  width: 130px;
+  cursor: pointer;
+}
+
+.leavemission {
+  border: 1px solid #e1525d;
+  color: #e1525d;
+  background-color: inherit;
+  padding: 2px 4px;
+  border-radius: 4px;
+  width: 130px;
+  cursor: pointer;
+}
