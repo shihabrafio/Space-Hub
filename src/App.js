@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Rocket from './components/Rocket';
 import Mission from './components/Missions';
 import Dragons from './components/Dragons';
+import Profile from './components/Profile';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Route className="navlink" path="categories" />
         <Route className="navlink" path="dragons" element={<Dragons />} />
 
-        <Route className="navlink" path="myprofile" />
+        <Route className="navlink" path="myprofile" element={<Profile />} />
       </Routes>
     </div>
   );
