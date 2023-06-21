@@ -100,12 +100,14 @@ td {
 .missionstable {
   box-sizing: border-box;
   border: 1px solid black;
-  border-spacing: 0px;
+  border-spacing: 0;
 }
+
 .missionstable tr {
   border: 1px solid #ccc;
 }
+
 .missionstable td {
   padding: 10px;
-  background-color: #fff
+  background-color: #fff;
 }
