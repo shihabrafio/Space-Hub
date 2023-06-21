@@ -24,7 +24,7 @@ td {
   border: 0.5px solid #03142b;
   border-collapse: collapse;
   padding-left: 1.5%;
-  width: 60%;
+  width: 58%;
 }
 
 .nameData {
@@ -38,7 +38,6 @@ td {
 .member {
   width: 14%;
   text-align: center;
-  padding-left: 3rem;
 }
 
 .onemission_description {
