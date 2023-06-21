@@ -56,19 +56,15 @@ header {
   padding: 20px;
 }
 
-.dragons-wrapper {
+.dragons-wrapper,
+.rockets-wrapper,
+.missions-wrapper {
   width: 100%;
 }
 
-.rockets-wrapper {
-  width: 100%;
-}
-
-.rockets-wrapper > h2 {
-  margin-bottom: 15px;
-}
-
-.dragons-wrapper > h2 {
+.rockets-wrapper > h2,
+.dragons-wrapper > h2,
+.missions-wrapper > h2 {
   margin-bottom: 15px;
 }
 
