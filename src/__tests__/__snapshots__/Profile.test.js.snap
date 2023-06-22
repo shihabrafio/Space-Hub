@@ -1,0 +1,276 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile component renders with active missions 1`] = `
+<section
+  class="profile-container"
+>
+  <div
+    class="dragons-wrapper"
+  >
+    <h2>
+      My Dragons
+    </h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            No Dragons reserved!
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    class="rockets-wrapper"
+  >
+    <h2>
+      My Rockets
+    </h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            No Rockets reserved!
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    class="missions-wrapper"
+  >
+    <h2>
+      My Mission
+    </h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            No Missions Joined!
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+`;
+
+exports[`Profile component renders with no active missions 1`] = `
+<section
+  class="profile-container"
+>
+  <div
+    class="dragons-wrapper"
+  >
+    <h2>
+      My Dragons
+    </h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            No Dragons reserved!
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    class="rockets-wrapper"
+  >
+    <h2>
+      My Rockets
+    </h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            No Rockets reserved!
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    class="missions-wrapper"
+  >
+    <h2>
+      My Mission
+    </h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            No Missions Joined!
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+`;
+
+exports[`Profile component renders with no reserved dragons or rockets 1`] = `
+<section
+  class="profile-container"
+>
+  <div
+    class="dragons-wrapper"
+  >
+    <h2>
+      My Dragons
+    </h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            No Dragons reserved!
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    class="rockets-wrapper"
+  >
+    <h2>
+      My Rockets
+    </h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            No Rockets reserved!
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    class="missions-wrapper"
+  >
+    <h2>
+      My Mission
+    </h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            No Missions Joined!
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+`;
+
+exports[`Profile component renders with reserved dragons 1`] = `
+<section
+  class="profile-container"
+>
+  <div
+    class="dragons-wrapper"
+  >
+    <h2>
+      My Dragons
+    </h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            No Dragons reserved!
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    class="rockets-wrapper"
+  >
+    <h2>
+      My Rockets
+    </h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            No Rockets reserved!
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    class="missions-wrapper"
+  >
+    <h2>
+      My Mission
+    </h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            No Missions Joined!
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+`;
+
+exports[`Profile component renders with reserved rockets 1`] = `
+<section
+  class="profile-container"
+>
+  <div
+    class="dragons-wrapper"
+  >
+    <h2>
+      My Dragons
+    </h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            No Dragons reserved!
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    class="rockets-wrapper"
+  >
+    <h2>
+      My Rockets
+    </h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            No Rockets reserved!
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    class="missions-wrapper"
+  >
+    <h2>
+      My Mission
+    </h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            No Missions Joined!
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+`;
