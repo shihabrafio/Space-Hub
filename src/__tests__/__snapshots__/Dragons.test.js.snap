@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dragons component renders correctly 1`] = `
+<div>
+  <section
+    class="container"
+  >
+    <div
+      class="card"
+    >
+      <div
+        class="img"
+      >
+        <img
+          alt="123"
+          src="dragon1.jpg"
+        />
+      </div>
+      <div
+        class="card-content"
+      >
+        <h3>
+          Dragon 1
+        </h3>
+        <p
+          class="desc"
+        >
+          Dragon 1 Description
+        </p>
+        <button
+          class="btn primary-btn"
+          type="button"
+        >
+          Reserve Dragon
+        </button>
+      </div>
+    </div>
+    <div
+      class="card"
+    >
+      <div
+        class="img"
+      >
+        <img
+          alt="123"
+          src="dragon2.jpg"
+        />
+      </div>
+      <div
+        class="card-content"
+      >
+        <h3>
+          Dragon 2
+        </h3>
+        <p
+          class="desc"
+        >
+          <span
+            class="badge"
+          >
+            Reserved
+          </span>
+          Dragon 2 Description
+        </p>
+        <button
+          class="btn secondary-outline-btn"
+          type="button"
+        >
+          Cancel Reservation
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+`;
