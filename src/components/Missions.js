@@ -1,4 +1,4 @@
-import '../styles/missions.css';
+import '../App.css';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchMissions } from '../redux/missions/missionsSlice';
@@ -13,7 +13,7 @@ const Mission = () => {
     }
   }, [status, dispatch]);
   if (status === 'loading') {
-    return <div>Loading...</div>;
+    return <h2 style={{ textAlign: 'center' }}>Loading...</h2>;
   }
   if (status === 'failed') {
     return <div>{error}</div>;

@@ -1,4 +1,4 @@
-import '../styles/missions.css';
+import '../App.css';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { reverse } from '../redux/missions/missionsSlice';

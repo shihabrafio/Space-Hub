@@ -5,7 +5,7 @@ import {
   reserveDragon,
   cancelReservation,
 } from '../redux/dragons/dragonsSlice';
-import '../styles/general.css';
+import '../App.css';
 
 const Dragons = () => {
   const { dragons, status, error } = useSelector((state) => state.dragons);
@@ -18,7 +18,7 @@ const Dragons = () => {
   }, [status, dispatch]);
 
   if (status === 'loading') {
-    return <h3 style={{ textAlign: 'center' }}>Loading...</h3>;
+    return <h2 style={{ textAlign: 'center' }}>Loading...</h2>;
   }
 
   if (status === 'failed') {
