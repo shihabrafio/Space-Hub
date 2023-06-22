@@ -5,7 +5,7 @@ import {
   reserveDragon,
   cancelReservation,
 } from '../redux/dragons/dragonsSlice';
-import '../styles/general.css';
+import '../App.css';
 
 const Dragons = () => {
   const { dragons, status, error } = useSelector((state) => state.dragons);
