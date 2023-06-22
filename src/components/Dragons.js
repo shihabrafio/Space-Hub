@@ -18,7 +18,7 @@ const Dragons = () => {
   }, [status, dispatch]);
 
   if (status === 'loading') {
-    return <h3 style={{ textAlign: 'center' }}>Loading...</h3>;
+    return <h2 style={{ textAlign: 'center' }}>Loading...</h2>;
   }
 
   if (status === 'failed') {

@@ -163,10 +163,6 @@ table {
   border: 2px solid lightgrey;
 }
 
-td {
-  padding-block: 20px;
-}
-
 /* missions */
 .mission_table_wrapper {
   width: 90%;
@@ -191,6 +187,7 @@ td {
 }
 
 td {
+  padding-block: 20px;
   border: 0.5px solid #03142b;
   border-collapse: collapse;
   padding-left: 1.5%;
@@ -257,4 +254,13 @@ td {
   border-radius: 4px;
   width: 130px;
   cursor: pointer;
+}
+
+.profile-tr {
+  display: flex;
+  border: none;
+}
+
+.profile-tr td {
+  border: none;
 }
