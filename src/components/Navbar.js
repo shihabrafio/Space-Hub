@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import links from './links';
 
 const Navbar = () => (
-  <header>
+  <header className="fixed-navbar">
     <div className="logo">
       <img src="./assets/planet.png" alt="" />
       <span>
